@@ -1,0 +1,55 @@
+h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+#Paragraphe{
+background: red;
+color: rgb(214, 238, 4);
+}
+
+#Liens{
+    background-color: darkgoldenrod;
+    color: brown;
+}
+
+ul{
+    list-style-type:none ;
+    
+}
+
+li{
+    display: inline;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+nav > ul > li > a{
+    background-color: chartreuse;
+    color: aliceblue;
+   
+}
+div{
+    background-color: forestgreen;
+}
+
+.option1{
+    background-color: #b10f2f;
+    color: blue;
+    font-style: italic;
+}
+.option2{
+background-color: rgb(183, 236, 25);
+color: blueviolet;
+}
+
+#Paragraphe1{
+    color: black;
+}
+
+section{
+    background-color: rgb(183, 236, 25);
+}

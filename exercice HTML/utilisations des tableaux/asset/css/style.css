@@ -1,0 +1,35 @@
+table {
+    width: 500px;
+    height: 500px;
+    margin: auto;
+}
+
+
+
+#image1 {
+    height: 600px;
+    width: 500px;
+    border: double;
+}
+
+#image2 {
+    height: 600px;
+    width: 500px;
+    border: double;
+}
+
+#texte1 {
+    width: 200px;
+}
+
+#texte2 {
+    width: 200px;
+}
+#texte3{
+    width: 200px;
+  }
+  
+  #texte4{
+    width: 200px;
+  }
+  

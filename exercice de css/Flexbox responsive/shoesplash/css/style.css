@@ -1,0 +1,286 @@
+* {
+
+    box-sizing: border-box;
+    font-family: "Courgette", cursive;
+    poids de la police: 400;
+    style de police: normal;
+}
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+body {
+
+    background-color: #f2f2f2ff;
+}
+
+.container {
+    margin: auto;
+    max-width: 1500px;
+    width: 75%;
+}
+
+header .container>nav a:hover {
+    background-color: rgb(53, 50, 50);
+    color: white;
+    transition: all 0.1s ease 0s;
+}
+
+
+html body header {
+    background-color: #f5d3f4ff;
+}
+
+div.container {
+    background-color: #f5d3f4ff;
+}
+
+div.container nav {
+    display: flex;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+div.container nav a {
+    margin-bottom: 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    width: 75%;
+    font-size: 28px;
+}
+
+html body header div.container a {
+    display: inline-block;
+
+}
+
+html body header div.container a img {
+    margin-bottom: 2em;
+    width: 400px;
+}
+
+
+
+html body header div.container div#cart {
+    float: right;
+    flex-direction: column;
+    margin-inline-end: 6.5em;
+
+}
+
+.left {
+    display: inline-block;
+    margin-top: 2.5em;
+}
+
+
+html body header div.container div#cart.right.clear p.left span {
+    background-color: #f5d3f4ff;
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+html body header div.container div#cart.right.clear i.fa.fa-shopping-cart.right {
+
+    font-size: x-large;
+}
+
+body header div.topbar small {
+
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+}
+
+main {
+    display: block;
+    text-align: center;
+}
+
+#slider,
+#select,
+#new,
+#best,
+#crush {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+html body main.container section#slider img {
+
+    margin-top: 1em;
+    border: 15px solid white;
+    margin-bottom: 3em;
+    max-width: 100%;
+}
+
+
+html body main.container section#select h1 {
+    font-size: 25px;
+    margin: 9.5em;
+    margin-right: 45em;
+    position: absolute;
+}
+
+
+html body main.container section#select article.escarpin img {
+    margin-left: 10em;
+}
+
+html body main.container section#select article.escarpin h3 {
+    display: flex;
+    flex-direction: row;
+    flex-direction: row-reverse;
+}
+
+
+h2#escarpin {
+    background-color: #f5d3f4ff;
+    position: absolute;
+    margin-left: 1em;
+    margin-top: 3.1em;
+    padding: 1em;
+    text-align: left;
+    font-size: 20px
+}
+
+h2 span {
+    font-size: small;
+}
+
+section#select {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    background-color: white;
+    padding-right: 12em;
+    padding-top: 5em;
+    padding-bottom: 2.5em;
+    margin: auto;
+    margin-bottom: 4em;
+    text-align: center;
+ 
+
+}
+
+section#news  > * {
+display: inline-block;
+text-align: center;
+width: 33%;
+margin-bottom: 3em;
+}
+
+#select:hover > article{
+    opacity: 0.5;
+}
+
+#select > article:hover{
+    opacity: 1;
+}
+
+
+html body footer section#info article {
+    background-color: #e3ace1ff;
+    display: inline-block;
+}
+
+
+
+html body main.container section#news article#new {
+    background-color: white;
+    padding: 1em;
+    font-size: 20px;
+}
+
+html body main.container section#news article#new h2 {
+    background-color: #eb36c0ff;
+    color: white;
+    padding: 0.5em;
+}
+
+
+html body main.container section#news article#best {
+    background-color: white;
+    padding: 1em;
+    font-size: 20px;
+
+}
+
+
+html body main.container section#news article#best h2 {
+    background-color: #8fba45ff;
+    color: white;
+    padding: 0.5em
+}
+
+
+html body main.container section#news article#crush {
+    background-color: white;
+    padding: 1em;
+    font-size: 20px;
+
+}
+
+
+html body main.container section#news article#crush h2 {
+    background-color: #0397ad;
+    color: white;
+    padding: 0.5em;
+}
+
+
+html body footer section#info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #e3ace1ff;
+    font-size: large;
+
+}
+
+footer section#info article .fa {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    background-color: #e3ace1ff;
+    padding-top: 3em;
+}
+
+#bottombar {
+    margin-top: 3em;
+    background-color: #f5d3f4ff;
+    display: flex;
+    justify-content: space-around;
+    font-size: large;
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 640px) {
+  { display:flex;
+    
+    
+} 
+}

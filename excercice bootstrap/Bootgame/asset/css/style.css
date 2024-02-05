@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(4, 4, 4);
+  color: rgb(134, 131, 125);
+
+  .container-fluid {
+    background-color: #30363d;
+    color: white;
+  }
+}
+
+.navbar-brand {
+  color: white;
+}
+a.nav-link {
+  color: #575c61ff;
+}
+
+button.btn.btn-outline-success {
+  background-color: #099609ff;
+  color: white;
+}
+
+html body div header div {
+  background-color: white;
+
+  & a {
+    background-color: green;
+    color: white;
+    border-radius: 0.2em;
+    margin: 1em;
+  }
+}
+
+.btn1 {
+  background-color: #099609ff;
+}
+
+#loremIpsum1 {
+  color: white;
+  background-color: #099609ff;
+}
+
+.row img {
+  
+}
+#dflex1 {
+  background-color: #099609ff;
+  color: white;
+}
+
+#table {
+  background-color: #099609ff;
+}
+
+.btn-primary {
+  background: white;
+  color: rgb(0, 123, 255);
+  word-spacing: 1em;
+}
+
+ 

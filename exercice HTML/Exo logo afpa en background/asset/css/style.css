@@ -1,0 +1,36 @@
+body {
+    background-image: url(/asset/css/Logo_Afpa.jpg);
+    background-size: 170px;
+    background-repeat: repeat;
+    margin-left: 1cm;
+    
+}
+
+h1 {
+    text-align: center;
+    font-size: 70px;
+    margin-top: 15%;
+  
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 3%;
+}
+
+#p1 {
+   
+    font-size: 19px;
+    
+}
+
+#p2 {
+    
+    font-size: 19px;
+    bottom: 20%;
+}
+
+#hr1 {
+    margin-top: 10%;
+}

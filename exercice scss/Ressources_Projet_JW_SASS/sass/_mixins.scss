@@ -1,0 +1,53 @@
+@mixin titre1 {
+  background-color: rgb(11, 11, 11);
+  color: rgb(245, 241, 241);
+  text-align: end;
+  font-size: x-large;
+}
+
+@mixin titre3 {
+  background-color: rgb(12, 12, 12);
+  color:$fourth-color;
+  text-align: right;
+}
+
+@mixin text-box {
+  background-color: $second-color;
+  text-align: center;
+  font-size: large;
+  color:$fourth-color;
+}
+
+@mixin star{
+  box-shadow: 5px 1px 5px 2px;
+  margin: 20px;
+  width: 300px;
+  text-align: justify;
+  background-color:whitesmoke;
+}
+
+@mixin bouton {
+  position: relative;
+  color: $fourth-color;
+  background-color: $primary-color;
+  width: 100px;
+  margin-left: 14em;
+  margin-bottom: 1em;
+  border-radius: 0.5em;
+  size: 0.5rem;
+
+  &::after {
+    content: "\0023F7";
+  
+  }
+}
+
+@mixin mois{
+  background-color: black;
+  color: white;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  float: right;
+  font-size: x-large;
+  
+}

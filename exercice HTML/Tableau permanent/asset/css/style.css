@@ -1,0 +1,23 @@
+table {
+    width: 70%;
+    border-collapse: collapse;
+    margin: auto;
+
+}
+
+td {
+    
+    text-align: justify;
+    vertical-align: top; /* Ajustez cette valeur selon vos préférences */
+    padding: 8px;
+
+}
+
+img{
+ 
+  height: 10vh;
+ shape-outside:url(png-clipart-kiss-kiss.png);
+ position: relative;
+ float: right;
+margin: 0.25em;
+}

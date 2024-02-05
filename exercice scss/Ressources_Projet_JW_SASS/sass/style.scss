@@ -1,0 +1,115 @@
+@import "_couleurs";
+@import "_mixins";
+
+body {
+  background-image: url("../fond.webp");
+}
+
+hr {
+  height: 1px;
+  background-color: $primary-color;
+}
+
+h2,
+h4 {
+  font-family: alfa;
+}
+
+html body div#logo img {
+  width: 250px;
+  opacity: calc(50%);
+}
+
+#title-flex {
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  font-size: 50px;
+}
+
+h1 span#web {
+  color: $third-color;
+}
+.clear span.journal {
+  @include titre1;
+}
+
+.clear {
+  text-align: end;
+}
+
+div#title-flex h2 {
+  padding-right: 15%;
+  background-color: $primary-color;
+  color: $fourth-color;
+  font-size: 30px;
+}
+
+#title-flex h4#date_du_jour {
+  font-size: 30px;
+}
+
+#logo img {
+  float: left;
+}
+
+div.container {
+  display: flex;
+
+  justify-content: center;
+}
+
+div.container div.card.children {
+  @include star;
+}
+
+div.container div.card.children {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.text-box3,
+.text-box2,
+.text-box1 {
+  @include text-box;
+}
+
+.box {
+  float: left;
+}
+
+h3 {
+  background-color: $primary-color;
+  text-align: center;
+  color: $fourth-color;
+  border-radius: 0.3em;
+  padding: 0.5em;
+}
+
+button {
+
+     @include bouton; 
+     
+     &:hover{
+      background-color: red
+     }
+  }
+
+#mois {
+  @include mois;
+}
+
+@media only screen and (max-width: 560px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  #title-flex {
+    flex-direction: row;
+  }
+
+  h2 {
+    font-size: xx-small;
+  }
+}

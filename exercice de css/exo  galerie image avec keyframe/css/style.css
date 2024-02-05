@@ -1,0 +1,62 @@
+body {
+  max-width: 1200px;
+  margin: auto;
+  background-image: url(../images/bg.jpg);
+}
+
+.galerie {
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+}
+
+.galerie img {
+  border: 2px solid white;
+  flex: 14.28;
+  max-width: calc(13% - 4px);
+  max-height: 50%;
+
+}
+
+div:hover img:not(:hover) {
+  animation: zoom-not-color 4s ease-in-out
+}
+
+.galerie img:hover {
+  animation: zoom-in-color 4s ease-in-out;
+  z-index: 1;
+
+}
+
+/* J'ai creer des keyframes , donné un noms et une fonction ( ici j'ai demandé a ce que ça taille agmente et j'ai placer mon animation dans la zone concerné */
+
+@keyframes zoom-in-color {
+  from {
+    transform: scale(1.0);
+
+  }
+
+  to {
+    transform: scale(1.3);
+
+  }
+}
+
+@keyframes zoom-not-color {
+  from {
+    transform: scale(1);
+    filter: grayscale(0);
+  }
+
+  to {
+    transform: scale(0.8);
+    filter: grayscale(1);
+  }
+
+}
+
+h1 {
+  text-align: center;
+  color: darkgreen;
+  font-size: 60px;
+}

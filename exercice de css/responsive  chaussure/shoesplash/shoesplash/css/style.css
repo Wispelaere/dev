@@ -1,0 +1,221 @@
+:root{
+  --color1: #f6d4f5;
+  --color0:#000000;
+  --color2: #e9aaf1;
+  --color3:#5b435b;
+  --color4: #ea35c0;
+  --color5: #90bb45;
+  --color6:#0298b0; 
+  --color7:#f2f2f2;                       /définition des variable globales du site/
+}
+{
+  box-sizing: border-box;                   / défini la façon dont la hauteur et la largeur totale sont calculée/
+}
+
+h3{
+  font-family: 'Courgette';
+}
+
+.clear{                          /permet à l'élément qui flotte d'être encadré où il se trouve/
+  overflow: auto;
+}
+
+img{                                                    /toutes les images feront maximum 1500px/
+  max-width: 100%;
+}
+.clear:after{                   /**/
+  content: "";
+  clear: both;
+  display: table;
+}
+.topbar{
+  background-color: var(--color0);
+  color: var(--color3);
+  text-align: center;
+}
+/ définir une transition de type ease et de durée 0.2 secondes sur la balise a /
+a:hover{
+  color: white;
+}
+a{
+  transition: all 0.2s;
+}
+.container > nav > a:hover{
+  color: white;
+  background-color: rgb(53,50,50);
+}
+.container{                      /tous les éléments du container sur afficher à 75% sur la page et ont une limite de 1500 pixels/
+  width: 75%;
+  margin: auto;
+  max-width: 1500px;           /container s'affiche à maximum 1500px/
+}
+.left{                               //
+  float: left;
+}
+.right{                              //
+  float: right;
+}
+header{
+  background-color: var(--color1);
+  }
+  body{
+      background-color: var(--color7);
+  }
+  .fa.fa-shopping-cart.right{
+      color: var(--color2);
+  font-size: 2em;
+  line-height: 2em;
+  }
+  #cart > p > span{
+      color: #000000;
+      font-weight: 900;                      /intensité police gras/
+      display: block;                        /personne à droite personne à gauche*/
+      text-align: right;
+  }
+#cart{
+      color: var(--color2);
+  }
+.container > nav{
+  display: flex;
+}
+.container > nav > a{          /chacun vaux 1 et dispersé en 5 colonnes/
+  flex: 1;
+  text-align: center;
+  text-decoration: none;                         /*enlevé le souligné ou autre décoration de "a"    /
+  padding: 1em 0;
+  color: var(--color0);
+  text-transform: uppercase;                     /mettre un texte en majuscule/
+}
+div.container > a > img{
+  margin-left: 5em;
+}
+#slider > h2 {
+  background-color: var(--color1);
+  position: absolute;                            /superposition au dessus /
+  opacity: 0.8;
+  padding: 1em;
+  margin-left: 1em;
+}
+#slider > img {
+  border: 20px solid white;
+}
+#slider, #select, #new, #footer{
+  margin-top: 2em;
+}
+#slider , #select , #new , #best , #crush{
+  box-shadow: 0 0 5px  rgba(0 , 0 , 0 , 0.1);   /permet de faire des ombres/
+  /  le dernier 0.1 permet d'indiquer le pourcentage de transparence/
+}
+#select > h1{
+  width: 100%;
+  margin-left: 2em;
+}
+#select{
+  background-color: white;
+  display : flex ;                                  /il agence les blocs du mieux possible/
+  flex-wrap : wrap;                                /indique si les éléments flexibles sont contraints à être disposés sur une seule
+  ligne ou s'ils peuvent être affichés sur plusieurs lignes avec un retour automatique.*/
+  padding: 1em ;
+}
+#select > article{
+  flex: 1;
+  text-align: center;
+}
+
+#select:hover > article{                  /quand on survole le cadre l'opacitée est de 0.5/
+  opacity: 0.5;
+}
+#select > article > img{
+  height: 110px;                        /les images ont la même la hauteur/
+  justify-content: space-around;        /les images s'alignent a un espace égal sur oute la ligne/
+}
+#select > article:hover{
+  opacity: 1;                           /quand on survole une imagie, l'image en question passe à 1 d'opacitée/
+}
+#news > {
+  background-color: white;
+  width: 33.1%;
+  display: inline-block;
+  text-align: center;
+}
+
+#news > > img {
+  height: 347px;
+}
+#new > h2 {
+  background-color: var(--color4);
+}
+#best > h2 {
+  background-color: var(--color5);
+}
+
+#crush > h2{
+  background-color: var(--color6);
+}
+
+#new , #best , #crush {
+  padding: 0 6em 1.25em;
+}
+
+#new >h2::before, #best >h2::before ,#crush >h2::before {
+  content: url(/css/logo4.png);
+  padding-right: 0.5em;
+}
+#news > * > h2{
+  text-align: left;
+  padding: 0.25em;
+}
+#info{
+  background-color: var(--color2);
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1em;
+}
+
+#info .fa{
+  display: block;                       /personne à droite ni à gauche, cre des espaces entre les éléments/
+  text-align: center;
+}
+#bottombar{
+  display: flex;
+  justify-content: space-evenly;       /place tout sur une ligne avec un espace égal entre eux/
+  background-color: var(--color1);
+  text-align: center;
+}
+#bottombar >article >ul {
+  list-style: none;                    /enlever les décorations des listes/
+  padding: 0;
+}
+
+#info article:hover , #bottombar li:hover{      /quand on survol les articles et les listes/
+  color: white;
+  background-color: rgb(53,50,50);
+  cursor: pointer;                            /curseur pointeur/
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 640px)/quand le média est uniquement un écran de maximum 640 pixels/
+{
+.escarpin > img { height: auto;} 
+.escarpin{
+  width: 100%;
+}
+
+#news{
+  display: block;
+}
+#news > *{
+  width: 100%;
+}
+#new , .escarpin{
+  width: 100%;
+}
+}

@@ -1,0 +1,70 @@
+body {
+  background-image: url(/img/daa6856183d28fc558a3dff099592646\ \(1\).jpeg);
+  background-size: 120%;
+}
+
+body {
+  background-color: rgb(69, 67, 67);
+}
+
+.navbar-brand {
+  color: red;
+}
+
+#acdc1 {
+  width: 100px;
+}
+
+.figure {
+ 
+
+  & .figure-caption {
+    color: white;
+  }
+
+  & img {
+    border: 4px solid white;
+    width: 300x;
+    height: 300px;
+  }
+}
+
+.titre {
+  text-align: center;
+  color: white;
+}
+
+.card {
+  background-color: rgb(24, 27, 27);
+  color: white;
+  box-shadow: -1em 0 8em red;
+
+  & h5{
+    color: red;
+  }
+}
+
+.container .row .card{
+  margin: auto;
+}
+
+.container {
+  color: red;
+  & .table thead tr th {
+    color: red;
+  }
+}
+
+.btn,input {
+    background-color:red;
+    border-radius: 0.5em;
+    color: white;
+}
+
+.form-control{
+    color: red;
+}
+
+input::placeholder {
+    color: red;
+  }

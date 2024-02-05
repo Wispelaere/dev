@@ -1,0 +1,142 @@
+@charset "UTF-8";
+@font-face {
+  font-family: alfa;
+  src: url(/AlfaSlabOne-Regular.ttf);
+}
+/*on veut 3 colonnes à repartir sur toute la largueur de la page , on prend 98% pour creer l'espacement entre chaque enfant (item)
+on divise la largueur choisie par 98% par le nombre d'enfants (3) que l'on arrondit à l'inferieur (floor)*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("/fond.webp");
+}
+
+body > span {
+  font-family: alfa;
+  background-color: black;
+  color: white;
+  float: right;
+}
+
+.clear::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#logo {
+  float: left;
+}
+#logo img {
+  width: 150px;
+  opacity: 0.6;
+}
+
+h1 {
+  font-family: alfa;
+}
+
+#title-flex {
+  display: flex;
+  flex-direction: column;
+}
+#title-flex > h2 {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  padding: 0.5em;
+  font-family: alfa;
+}
+
+h3 {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  padding: 0.5em;
+}
+
+.container {
+  display: flex;
+  width: 75%;
+  margin: auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.text-box {
+  background-color: red;
+  color: white;
+  opacity: 0.6;
+  text-align: center;
+  border-radius: 10px 0;
+  padding: 0.5em;
+  font-family: alfa;
+}
+
+.children {
+  width: 30%;
+  background-image: linear-gradient(#ebe1e1, rgb(190, 180, 180));
+  border-radius: 10px 1em;
+  padding: 0.5em;
+  position: relative;
+}
+.children:hover {
+  background-color: red;
+}
+.children .box {
+  border: 1px solid white;
+  float: left;
+}
+.children p {
+  text-align: justify;
+  margin-bottom: 2em;
+}
+.children button {
+  font-family: alfa;
+  background-color: black;
+  color: white;
+  float: right;
+  border-radius: 10px;
+  padding: 0.5em;
+  bottom: 1em;
+  right: 1em;
+}
+.children:hover {
+  background-color: red;
+}
+.children .box {
+  border: 1px solid white;
+  float: left;
+  margin-right: 0.5em;
+}
+.children img {
+  width: 100%;
+}
+
+.card {
+  box-shadow: 2px 5px 5px black;
+  border-radius: 10px;
+  padding: 0.5em;
+}
+
+#web,
+h4 {
+  opacity: 0.6;
+  font-family: alfa;
+}
+
+@media screen and (max-width: 640px) {
+  #title-flex > h2 {
+    font-size: 0.75em;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .children {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

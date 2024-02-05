@@ -1,0 +1,65 @@
+body {
+    border: 4px solid rgb(247, 244, 244);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+main {
+    border: 4px solid rgb(252, 249, 249);
+    display: flex;
+    flex-grow: 1;
+}
+
+section {
+    border: 4px solid rgb(247, 247, 248);
+    flex-grow: 1;
+    background-color: #ff69b4ff;
+    color: aliceblue;
+    font-size: 24px;
+    padding: 15px;
+}
+
+header {
+    border: 4px solid #178fff;
+    background-color: #178fff;
+    color: antiquewhite;
+
+}
+
+footer {
+    border: 4px solid hwb(150 93% 6%);
+    background-color: #6b8f1eff;
+    color: aliceblue;
+    text-align: center;
+
+}
+
+aside {
+    border: 4px solid rgb(244, 247, 244);
+}
+
+nav {
+    border: 4px solid rgb(240, 235, 235);
+    color: aliceblue;
+    order: -1;
+    background-color: #ffa600ff;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 24px;
+
+
+
+
+
+}
+
+h1 {
+    text-align: center;
+
+}
+
+ul li a{
+    color: aliceblue;
+}

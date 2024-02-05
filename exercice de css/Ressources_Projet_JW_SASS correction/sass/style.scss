@@ -1,0 +1,139 @@
+@import "_couleurs";
+@import "_typo";
+@import "_mixins";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("/fond.webp");
+}
+
+body {
+  & > span {
+    @include alfaText;
+    @include invertVideo;
+    float: right;
+  }
+}
+
+.clear::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#logo {
+  float: left;
+
+  img {
+    width: $logoWidth;
+    @include opacity;
+  }
+}
+
+h1 {
+  @include alfaText;
+}
+
+#title-flex {
+  display: flex;
+  flex-direction: column;
+
+  > h2 {
+    @include invertVideo;
+    @include roundedBorder(10px);
+    @include alfaText;
+  }
+}
+
+h3 {
+  @include invertVideo;
+  @include roundedBorder(10px);
+}
+
+.container {
+  display: flex;
+  width: $containerWidth;
+  margin: auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.text-box {
+  background-color: red;
+  color: white;
+  @include opacity;
+  text-align: center;
+  @include roundedBorder(10px 0);
+  @include alfaText;
+}
+
+.children {
+  width: $childWidth;
+  background-image: linear-gradient(#ebe1e1ff, rgb(190, 180, 180));
+  @include roundedBorder(10px 1em);
+  position: relative;
+  
+
+  &:hover {
+    background-color: red;
+  }
+  .box {
+    border: 1px solid white;
+    @include leftFloat;
+  }
+
+  p {
+    text-align: justify;
+    margin-bottom: 2em;
+  }
+
+  button {
+    @include alfaText;
+    @include invertVideo;
+    @include rightFloat;
+    @include roundedBorder(10px);
+    bottom: 1em;
+    right: 1em;
+  }
+
+  &:hover {
+    background-color: red;
+  }
+  .box {
+    border: 1px solid white;
+    @include leftFloat;
+    margin-right: 0.5em;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.card {
+  box-shadow: 2px 5px 5px black;
+  @include roundedBorder(10px);
+}
+
+#web,
+h4 {
+  @include opacity;
+  @include alfaText;
+}
+
+@media screen and (max-width: 640px) {
+  #title-flex {
+    & > h2 {
+      font-size: 0.75em;
+    }
+  }.container {
+    flex-direction: column;
+  }
+  .children {
+    width: 100%;
+  }
+}
+

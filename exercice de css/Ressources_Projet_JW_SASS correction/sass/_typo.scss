@@ -1,0 +1,17 @@
+@use "sass:math";
+
+@font-face {
+    font-family: alfa;
+    src: url(/AlfaSlabOne-Regular.ttf);
+}
+
+$logoWidth: 150px;
+$containerWidth:75%;
+$childNumber:3;
+
+/*on veut 3 colonnes à repartir sur toute la largueur de la page , on prend 98% pour creer l'espacement entre chaque enfant (item)
+on divise la largueur choisie par 98% par le nombre d'enfants (3) que l'on arrondit à l'inferieur (floor)*/
+
+
+
+$childWidth:floor(math.div(90%, $childNumber));

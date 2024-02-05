@@ -1,0 +1,307 @@
+
+:root{
+  --back: #f2f2f2;
+  --back: #aaa;
+  --color0: #000000; /* black */
+  --color1: #f6d4f5; /* light pink */
+  --color2: #e9aaf1; /* pink */
+  --color3: #fff; /* violet */
+  --color4: #ea35c0; /* barbie pink */
+  --color5: #90bb45; /* green */
+  --color6: #0298b0; /* blue */
+}
+
+*{
+  /*
+    Dans un premier temps vous ferez en sorte d'inclure la marge interne et
+    la bordure à la largeur de tous les éléments de la page. Voir exercice précédent.
+  */
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var(--back);
+}
+
+#cart{
+  color: var(--color2);
+}
+
+#cart > i, .fa.fa-shopping-cart.right{
+  font-size: 2em;
+  line-height: 2em;
+}
+
+#cart span{
+  color:black;
+  font-weight: bolder;
+  display: block;
+  text-align: right;
+}
+
+.container > nav{
+  display: flex;
+}
+
+.container > nav > a{
+  flex: 1;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1em 0;
+  color: var(--color0);
+  /*
+    Vous définirez une transition de type ease et de durée 0.2 seconde
+    sur toutes la balises a de ce document afin d'améliorer les effets de survol.
+  */
+  transition: all ease 0.2s;
+}
+
+/* a:hover{ */
+.container > nav > a:hover{
+  color: white;
+  background-color: rgb(53, 50, 50);
+}
+
+div.container > a > img{
+  margin-left:4em;
+}
+
+img{
+  /*
+    Vous rendrez responsives toutes les images de votre page en jouant
+    sur la propriété max-width du sélecteur img.
+  */
+  max-width: 100%;
+}
+
+.container{
+  /*
+    Les balises associées à la classe container devront occuper 75% de la largeur
+    de la page jusqu'à une max-width de 1500 pixels.
+  */
+  width: 75%;
+  max-width: 1500px;
+  margin: auto;
+}
+
+.topbar{
+  background-color: var(--color0);
+  color:var(--color3);
+  text-align: center;
+}
+
+header{
+  background-color: var(--color1);
+}
+
+/*
+  Les classes .left et .right permettent de flotter les éléments respectivement
+  à gauche et à droite.
+*/
+.left{
+  float:left;
+}
+
+.right{
+  float:right;
+}
+
+#slider > h2{
+  background-color: var(--color1);
+  position:absolute;
+  opacity: 0.8;
+  padding: 1em;
+  margin-left: 1em;
+}
+
+#slider > img{
+  border: 20px solid white;
+}
+
+#slider, #select, #news, footer{
+  margin-top:2em;
+}
+
+/*
+  Vous donnerez un effet d'ombrage aux différentes sections :
+  #slider, #select,#new, #best et #crush
+  Pour cela utilisez la propriété :
+  box-shadow: 0 0 5px rgba(0,0, 0, 0.1);
+*/
+#slider, #select, #new, #best, #crush{
+  box-shadow: 0 0 5px rgba(0,0, 0, 0.1);
+}
+
+#news > * {
+  background-color: white;
+  width:33%;
+  text-align: center;
+  display: inline-block;
+}
+
+#news > * > h2{
+  text-align: left;
+  padding:0.25em;
+}
+
+#news > * > img{
+  height:347px;
+}
+
+#new, #best, #crush {
+  padding: 0em 2.7em 1.25em;
+}
+
+#new > h2{
+  background-color: var(--color4);
+  color: white;
+}
+
+#new > h2::before, #best > h2::before, #crush > h2::before{
+  content: url("../img/logo4.png");
+  padding-right: 0.5em;
+}
+
+#best > h2{
+  background-color: var(--color5);
+  color:white;
+
+}
+
+#crush > h2{
+  background-color: var(--color6);
+  color:white;
+
+}
+
+#select{
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em 0;
+}
+
+#select > h1{
+  width: 100%;
+  margin-left: 1em;
+}
+
+#select > article{
+  flex: 1;
+  text-align: center;
+}
+
+#select:hover > article{
+  opacity: 0.5;
+  transition: opacity ease 1s;
+}
+
+#select > article:hover{
+  opacity: 1;
+  transition: opacity ease 1s;
+}
+
+.escarpin > img,
+#select > article > img{
+  height: 110px;
+}
+
+#info{
+  background-color: var(--color2);
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1em 0;
+}
+
+#info .fa{
+  display: block;
+  text-align: center;
+}
+
+#bottombar{
+  background-color: var(--color1);
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+#bottombar > article > ul{
+  list-style: none;
+  padding:0;
+}
+
+ #info article:hover{
+  color: white;
+  background-color: rgb(53, 50, 50);
+  cursor: pointer;
+}
+#bottombar li:hover{
+  color: var(--color1);
+  background-color: rgb(53, 50, 50);
+  cursor: pointer;
+}
+
+h3{
+  font-family: 'Courgette', cursive;
+}
+
+/*
+  https://www.w3schools.com/howto/howto_css_clearfix.asp
+
+  2 versions pour gérer le débordement des éléments flottants :
+  ** La version simple si on maitrise les marges
+  ** la version un peu plus complexe sinon
+*/
+/*
+  .clear{
+    overflow:auto;
+  }
+*/
+.clear::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*
+ Quand le media est uniquement un écran d'au maximum 640px
+*/
+@media only screen and (max-width: 640px){
+
+  .escarpin > img{
+    height: auto;
+  }
+
+  #news{ display: block; }
+
+  .container, #news > * {
+    width: 100%;
+
+  }
+
+  #new, .escarpin{
+    width: 100%;
+  }
+  div.container > a > img {
+    margin-left: auto;
+  }
+  #cart{
+    display: none;
+  }
+  nav{
+    flex-direction: column;
+  }
+  #slider > h2{
+    position:initial;
+    margin: 1em 0 0;
+  }
+  #slider{
+    margin-top: 0;
+  }
+
+  #select, #bottombar, #info{
+    flex-direction: column;
+    text-align: center;
+  }
+}

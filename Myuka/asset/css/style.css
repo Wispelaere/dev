@@ -1,0 +1,56 @@
+body {
+    background-image: url(/les-fruits-et-legumes-colores-illustration-vectorielle-impression-alimentaire-fond-d-ecran-vecteur-dessine-a-la-main-avec-des-fruits-et-legumes-pw6wt1.jpg)
+}
+
+#title, #start {
+    background-color: rgb(105, 26, 129);
+    padding: 1em;
+    color: white;
+    border-radius: 1em;
+}
+
+#research {
+    background-color: rgb(105, 26, 129);
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1em;
+
+}
+
+#champ {
+    width: 22em;
+
+}
+
+#buttonScanner {
+    width: 15em;
+    background-color: green;
+}
+
+#photoMyuka {
+    background-color: rgb(105, 26, 129);
+    color: white;
+    border-radius: 1em;
+
+}
+
+#imageMyuka {
+    background-color: rgb(105, 26, 129);
+    color: white;
+    border-radius: 1em;
+}
+
+#allergenes,
+#huileDePalme,
+#nova,
+#nutriscore,
+#infoPays,
+#information {
+    background-color: rgb(105, 26, 129);
+    color: white;
+    padding: 5em;
+    border-radius: 1em;
+
+}

@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(166, 177, 12) ;
+}
+
+#bookList{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.card h1{
+    font-size: 14px;
+}
+.card h2{
+    font-size: 12px;
+}
+.card h5{
+    font-size: 10px;
+}
+
+img{
+    width: 160px;
+}

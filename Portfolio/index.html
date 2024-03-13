@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Accueil</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand text-light" href="#">WISPELAERE THOMAS</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon text-light">
+            +
+          </span>
+        </button>
+        <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h3 class="offcanvas-title text-light" id="offcanvasNavbarLabel">Menu</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="index.html">Accueil</a>
+                <br>
+                <a class="nav-link active text-light" aria-current="page" href="QuiSuisJe.html">Qui suis-je?</a>
+                <br>
+                <a class="nav-link active text-light" aria-current="page" href="Competences.html">Competences</a>
+                <br>
+                <a class="nav-link active text-light" aria-current="page" href="Projet.html">Projet</a>
+                <br>
+                <a class="nav-link active text-light" aria-current="page" href="CV.html">CV</a>
+                <br>
+                <a class="nav-link active text-light" aria-current="page" href="Contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="picture">
+      <img src="Capture d'écran 2024-01-30 104207.png" id="photo">
+    </div>
+    <div class="title">
+      <h1 id="job">DEVELOPPEUR</h1>
+      <hr>
+      <h1 id="job">WEB</h1>
+      <hr>
+      <h1 id="job">JUNIOR</h1>
+      <hr>
+    </div>
+  </div>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>

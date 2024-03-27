@@ -7,8 +7,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="../portfolio/style.css">
   <title>Accueil</title>
 </head>
 
@@ -29,7 +29,6 @@
             <h3 class="offcanvas-title text-light" id="offcanvasNavbarLabel">Menu</h3>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
-
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
@@ -51,22 +50,21 @@
       </div>
     </nav>
   </header>
-
-  <div class="container">
-    <div class="picture">
-      <img src="Capture d'écran 2024-01-30 104207.png" id="photo">
+  <div class="container text-center" id="projet">
+    <div class="col-6 ">
+      <a href="/Projet calcul/projetCalcul.html">
+        <img src="/images/téléchargement.jpg" alt="">
+      </a>
+      <p>addiction à l'addition</p>
     </div>
-    <div class="title">
-      <h1 id="job">DEVELOPPEUR</h1>
-      <hr>
-      <h1 id="job">WEB</h1>
-      <hr>
-      <h1 id="job">JUNIOR</h1>
-      <hr>
+    <div class="col-6">
+      <a href="/Batterie/batterie.html">
+        <img src="/images/istockphoto-165620431-612x612.jpg" alt="">
+      </a>
+      <p>batterie</p>
     </div>
   </div>
-  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="main.js"></script>
+  <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="/Batterie/asset/batterie.js"></script>
 </body>
-
 </html>
